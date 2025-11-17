@@ -2,6 +2,7 @@
 title: "Introduction to Stata"
 ---
 
+Text page: 
 
 This chapter introduces you to Stata, how to install it and the different ways to use it for statistical
 analysis. Stata is a powerful tool, but it remains a tool. The statistical concepts you learn are more
@@ -34,3 +35,7 @@ most of the
 
 1.6.1 Give some links to pages
 ---
+
+```{r}
+1 + 1
+```
