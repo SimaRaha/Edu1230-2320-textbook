@@ -2,12 +2,13 @@ project:
   type: book
 
 book:
-  title: "Edu1230-2320-textbook"
+  title: "Introduction to Data Analysis and Education Research using Stata"
   author: "Norah Jones"
   date: "11/15/2025"
   chapters:
     - index.qmd
     - intro.qmd
+    - Chapter1-intro-stata.qmd
     - summary.qmd
     - references.qmd
 

@@ -2,7 +2,6 @@
 title: "Introduction to Stata"
 ---
 
-# Introduction to Stata
 
 This chapter introduces you to Stata, how to install it and the different ways to use it for statistical
 analysis. Stata is a powerful tool, but it remains a tool. The statistical concepts you learn are more
@@ -12,16 +11,26 @@ page. There are many versions of Stata, and you should install the latest versio
 included in this book will work for version 17 and those more recent. Stata / IC should be sufficient for
 most of the
 
+
 1.1 Stata window components
 
 1.2 Stata syntax and Naming conventions
+
 1.3 Using the command prompt
+
 1.3.1 Make students use it as a calculator
+
 1.4 Loading data
+
 1.4.1 Introduce an educational dataset – maybe OECD, NCES, open dataset Working Directory
+
 1.4.2 Stata code count, describe, labels, etc.
+
 1.5 Installing Packages
+
 1.5.1 Give some examples to do
+
 1.6 Tips and resources
+
 1.6.1 Give some links to pages
 ---
