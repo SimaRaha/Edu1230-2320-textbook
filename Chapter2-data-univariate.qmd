@@ -2,26 +2,24 @@
 title: "Introduction to Data and Univariate Descriptive Statistics"
 ---
 
-### 2.1 Types of Variables
+# 
 
-Numerical Vs Categorical
+## 2.1 Types of Variables
 
-Numerical:Continuous VS Discrete
+### Numerical vs. Categorical
 
-Continuous: Interval VS Scale
+### Continuous vs. Discrete
 
-Categorical: ordinal vs nonminal
+### Interval vs. Ratio
 
-Include definitions, examples
+### Ordinal vs. Nominal
 
-Load the data from Chapter 1
+## 2.2 Mean, Median, Mode
 
-### 2.2 Mean, Median, Mode
+## 2.3 Spread: Range, IQR, SD
 
-### 2.3 Spread: range, IQR, Sd 
+## 2.4 Visualizing Univariate Data
 
-### 2.4 Visualizing univariate 
+### Bar Chart
 
-qua2.4.1 Bar chart
-
-2.4.2 Hist & Density
+### Histograms & Density Plots

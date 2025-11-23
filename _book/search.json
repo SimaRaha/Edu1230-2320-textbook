@@ -34,7 +34,47 @@
     "href": "Chapter2-data-univariate.html",
     "title": "2  Introduction to Data and Univariate Descriptive Statistics",
     "section": "",
-    "text": "2.0.1 2.1 Types of Variables\nNumerical Vs Categorical\nNumerical:Continuous VS Discrete\nContinuous: Interval VS Scale\nCategorical: ordinal vs nonminal\nInclude definitions, examples\nLoad the data from Chapter 1\n\n\n2.0.2 2.2 Mean, Median, Mode\n\n\n2.0.3 2.3 Spread: range, IQR, Sd\n\n\n2.0.4 2.4 Visualizing univariate\nqua2.4.1 Bar chart\n2.4.2 Hist & Density",
+    "text": "3",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "Chapter2-data-univariate.html#types-of-variables",
+    "href": "Chapter2-data-univariate.html#types-of-variables",
+    "title": "2  Introduction to Data and Univariate Descriptive Statistics",
+    "section": "3.1 2.1 Types of Variables",
+    "text": "3.1 2.1 Types of Variables\n\n3.1.1 Numerical vs. Categorical\n\n\n3.1.2 Continuous vs. Discrete\n\n\n3.1.3 Interval vs. Ratio\n\n\n3.1.4 Ordinal vs. Nominal",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "Chapter2-data-univariate.html#mean-median-mode",
+    "href": "Chapter2-data-univariate.html#mean-median-mode",
+    "title": "2  Introduction to Data and Univariate Descriptive Statistics",
+    "section": "3.2 2.2 Mean, Median, Mode",
+    "text": "3.2 2.2 Mean, Median, Mode",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "Chapter2-data-univariate.html#spread-range-iqr-sd",
+    "href": "Chapter2-data-univariate.html#spread-range-iqr-sd",
+    "title": "2  Introduction to Data and Univariate Descriptive Statistics",
+    "section": "3.3 2.3 Spread: Range, IQR, SD",
+    "text": "3.3 2.3 Spread: Range, IQR, SD",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
+    ]
+  },
+  {
+    "objectID": "Chapter2-data-univariate.html#visualizing-univariate-data",
+    "href": "Chapter2-data-univariate.html#visualizing-univariate-data",
+    "title": "2  Introduction to Data and Univariate Descriptive Statistics",
+    "section": "3.4 2.4 Visualizing Univariate Data",
+    "text": "3.4 2.4 Visualizing Univariate Data\n\n3.4.1 Bar Chart\n\n\n3.4.2 Histograms & Density Plots",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
     ]
