@@ -34,7 +34,7 @@
     "href": "Chapter2-data-univariate.html",
     "title": "2  Introduction to Data and Univariate Descriptive Statistics",
     "section": "",
-    "text": "2.1 2.1 Types of Variables\nNumerical vs. Categorical\nContinuous vs. Discrete\nInterval vs. Ratio\nOrdinal vs. Nominal",
+    "text": "2.1 2.1 Types of Variables\nNumerical Vs Categorical\nNumerical: Continuous VS Discrete\nContinuous: Interval VS Scale\nCategorical: ordinal vs nonminal\nInclude definitions, examples\nLoad the data from Chapter 1",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
     ]
