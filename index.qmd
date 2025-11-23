@@ -1,9 +1,11 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This book aims to teach you applied statistics in the context of education research. The goal of this book is to serve as an interactive introduction to quantitative analysis of educational data using Stata. The topics covered include descriptive statistics, correlation, statistical inference and hypothesis testing, and multiple regression. The content includes both a description of the concepts, and coding to implement the analyses using Stata.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+There are already many books and other resources to learn statistics, or Stata. Why should you read this one (and why should we write it)? The aim of this book is to introduce statistics, from foundational concepts to sophisticated models, in an applied context, and focused on educational data.
 
-```{r}
-1 + 1
-```
+This book is written using Quarto Book … The work in licensed under ….
+
+# Acknowledgements
+
+My approach for much of the material presented comes from my training as a student in graduate school where I learned from Judith Singer, and serving as a teaching fellow, especially with Andrew Ho. I also built on the work of my colleagues in the education department John Papay and Matthew Kraft. Finally, I am thankful to the teaching assistants and students of EDUC 1230 and EDUC 2320 who have helped me refine teaching materials over the years. This book was inspired in part by Dr. Alice Paul’s book Mastering Health Data Science Using R. The content for book.

@@ -7,7 +7,6 @@ book:
   date: "11/15/2025"
   chapters:
     - index.qmd
-    - intro.qmd
     - Chapter1-intro-stata.qmd
     - summary.qmd
     - references.qmd
