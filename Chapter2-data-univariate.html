@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Introduction to Stata – Introduction to Data Analysis and Education Research using Stata</title>
+<title>2&nbsp; 2. Introduction to Data and Univariate Descriptive Statistics – Introduction to Data Analysis and Education Research using Stata</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Chapter2-data-univariate.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./Chapter1-intro-stata.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -118,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter1-intro-stata.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Stata</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter2-data-univariate.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,13 +118,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter1-intro-stata.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Chapter1-intro-stata.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Stata</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter2-data-univariate.html" class="sidebar-item-text sidebar-link">
+  <a href="./Chapter2-data-univariate.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></span></a>
   </div>
 </li>
@@ -185,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#stata-window-components" id="toc-stata-window-components" class="nav-link active" data-scroll-target="#stata-window-components"><span class="header-section-number">1.1</span> 1.1 Stata window components</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">3</span> </a></li>
   </ul>
 </nav>
     </div>
@@ -194,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Stata</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></h1>
 </div>
 
 
@@ -211,32 +176,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This chapter introduces you to Stata, how to install it and the different ways to use it for statistical analysis. Stata is a powerful tool, but it remains a tool. The statistical concepts you learn are more important, and you will likely have to change the tools you use throughout your career. As a Brown University affiliate, you can download and install the software following instructions on this page. There are many versions of Stata, and you should install the latest version available. The code included in this book will work for version 17 and those more recent. Stata / IC should be sufficient for most of the</p>
-<section id="stata-window-components" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="stata-window-components"><span class="header-section-number">1.1</span> 1.1 Stata window components</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="www.statawindow.com"><img src="images/stata-window.png" class="img-fluid figure-img" width="3250"></a></p>
-<figcaption>Stata Window</figcaption>
-</figure>
-</div>
-<p>1.2 Stata syntax and Naming conventions</p>
-<p>1.3 Using the command prompt</p>
-<p>1.3.1 Make students use it as a calculator</p>
-<p>1.4 Loading data</p>
-<p>1.4.1 Introduce an educational dataset – maybe OECD, NCES, open dataset Working Directory</p>
-<p>1.4.2 Stata code count, describe, labels, etc.</p>
-<p>1.5 Installing Packages</p>
-<p>1.5.1 Give some examples to do</p>
-<p>1.6 Tips and resources</p>
-<p>1.6.1 Give some links to pages</p>
-<hr>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 7</code></pre>
-</div>
-</div>
+<section id="section" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> </h1>
+<p>2.1 Types of Variables</p>
+<p>Numerical Vs Categorical</p>
+<p>Numerical:Continuous VS Discrete</p>
+<p>Continuous: Interval VS Scale</p>
+<p>Categorical: ordinal vs nonminal Include definitions, examples</p>
+<p>Load the data from Chapter 1</p>
+<p>2.2 Mean, Median, Mode</p>
+<p>2.3 Spread: range, IQR, Sd</p>
+<p>2.4 Visualizing univariate</p>
+<p>2.4.1 Bar chart</p>
+<p>2.4.2 Hist &amp; Density</p>
 
 
 </section>
@@ -644,13 +596,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./Chapter1-intro-stata.html" class="pagination-link" aria-label="Introduction to Stata">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Stata</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Chapter2-data-univariate.html" class="pagination-link" aria-label="2. Introduction to Data and Univariate Descriptive Statistics">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
