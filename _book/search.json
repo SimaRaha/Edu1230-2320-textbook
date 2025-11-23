@@ -34,7 +34,7 @@
     "href": "Chapter2-data-univariate.html",
     "title": "2  Introduction to Data and Univariate Descriptive Statistics",
     "section": "",
-    "text": "3 2. Introduction to Data and Univariate Descriptive Statistics\n\n3.0.1 2.1 Types of Variables\n\nNumerical Vs Categorical\nNumerical:Continuous VS Discrete\nContinuous: Interval VS Scale\nCategorical: ordinal vs nonminal\nInclude definitions, examples\nLoad the data from Chapter 1\n\n\n\n3.0.2 2.2 Mean, Median, Mode\n\n\n3.0.3 2.3 Spread: range, IQR, Sd\n\n\n3.0.4 2.4 Visualizing univariate\n\n2.4.1 Bar chart\n2.4.2 Hist & Density",
+    "text": "2.0.1 2.1 Types of Variables\nNumerical Vs Categorical\nNumerical:Continuous VS Discrete\nContinuous: Interval VS Scale\nCategorical: ordinal vs nonminal\nInclude definitions, examples\nLoad the data from Chapter 1\n\n\n2.0.2 2.2 Mean, Median, Mode\n\n\n2.0.3 2.3 Spread: range, IQR, Sd\n\n\n2.0.4 2.4 Visualizing univariate\nqua2.4.1 Bar chart\n2.4.2 Hist & Density",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Data and Univariate Descriptive Statistics</span>"
     ]
