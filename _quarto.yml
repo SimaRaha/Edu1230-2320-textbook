@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - Chapter1-intro-stata.qmd
+    - Chapter2-data-univariate.qmd
     - summary.qmd
     - references.qmd
 

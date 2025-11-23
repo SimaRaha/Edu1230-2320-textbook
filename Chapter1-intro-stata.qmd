@@ -2,21 +2,11 @@
 title: "Introduction to Stata"
 ---
 
+This chapter introduces you to Stata, how to install it and the different ways to use it for statistical analysis. Stata is a powerful tool, but it remains a tool. The statistical concepts you learn are more important, and you will likely have to change the tools you use throughout your career. As a Brown University affiliate, you can download and install the software following instructions on this page. There are many versions of Stata, and you should install the latest version available. The code included in this book will work for version 17 and those more recent. Stata / IC should be sufficient for most of the
 
-This chapter introduces you to Stata, how to install it and the different ways to use it for statistical
-analysis. Stata is a powerful tool, but it remains a tool. The statistical concepts you learn are more
-important, and you will likely have to change the tools you use throughout your career.
-As a Brown University affiliate, you can download and install the software following instructions on this
-page. There are many versions of Stata, and you should install the latest version available. The code
-included in this book will work for version 17 and those more recent. Stata / IC should be sufficient for
-most of the
-
-
-1.1 Stata window components
----
+## 1.1 Stata window components
 
 [![Stata Window](images/stata-window.png){width="3250"}](www.statawindow.com)
-
 
 1.2 Stata syntax and Naming conventions
 
@@ -38,7 +28,7 @@ most of the
 
 1.6.1 Give some links to pages
 
----
+------------------------------------------------------------------------
 
 ```{r}
 1 + 1 + 5
