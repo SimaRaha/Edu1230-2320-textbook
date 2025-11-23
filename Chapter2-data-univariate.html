@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; 2. Introduction to Data and Univariate Descriptive Statistics – Introduction to Data Analysis and Education Research using Stata</title>
+<title>2&nbsp; Introduction to Data and Univariate Descriptive Statistics – Introduction to Data Analysis and Education Research using Stata</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter2-data-univariate.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter2-data-univariate.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Data and Univariate Descriptive Statistics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter2-data-univariate.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Data and Univariate Descriptive Statistics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,7 +150,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">3</span> </a></li>
+  <li><a href="#introduction-to-data-and-univariate-descriptive-statistics" id="toc-introduction-to-data-and-univariate-descriptive-statistics" class="nav-link active" data-scroll-target="#introduction-to-data-and-univariate-descriptive-statistics"><span class="header-section-number">3</span> 2. Introduction to Data and Univariate Descriptive Statistics</a>
+  <ul class="collapse">
+  <li><a href="#types-of-variables" id="toc-types-of-variables" class="nav-link" data-scroll-target="#types-of-variables"><span class="header-section-number">3.0.1</span> 2.1 Types of Variables</a></li>
+  <li><a href="#mean-median-mode" id="toc-mean-median-mode" class="nav-link" data-scroll-target="#mean-median-mode"><span class="header-section-number">3.0.2</span> 2.2 Mean, Median, Mode</a></li>
+  <li><a href="#spread-range-iqr-sd" id="toc-spread-range-iqr-sd" class="nav-link" data-scroll-target="#spread-range-iqr-sd"><span class="header-section-number">3.0.3</span> 2.3 Spread: range, IQR, Sd</a></li>
+  <li><a href="#visualizing-univariate" id="toc-visualizing-univariate" class="nav-link" data-scroll-target="#visualizing-univariate"><span class="header-section-number">3.0.4</span> 2.4 Visualizing univariate</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -159,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">2. Introduction to Data and Univariate Descriptive Statistics</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Data and Univariate Descriptive Statistics</span></h1>
 </div>
 
 
@@ -176,21 +182,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="section" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> </h1>
-<p>2.1 Types of Variables</p>
-<p>Numerical Vs Categorical</p>
-<p>Numerical:Continuous VS Discrete</p>
-<p>Continuous: Interval VS Scale</p>
-<p>Categorical: ordinal vs nonminal Include definitions, examples</p>
-<p>Load the data from Chapter 1</p>
-<p>2.2 Mean, Median, Mode</p>
-<p>2.3 Spread: range, IQR, Sd</p>
-<p>2.4 Visualizing univariate</p>
-<p>2.4.1 Bar chart</p>
-<p>2.4.2 Hist &amp; Density</p>
+<section id="introduction-to-data-and-univariate-descriptive-statistics" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 2. Introduction to Data and Univariate Descriptive Statistics</h1>
+<section id="types-of-variables" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1" class="anchored" data-anchor-id="types-of-variables"><span class="header-section-number">3.0.1</span> 2.1 Types of Variables</h3>
+<ul>
+<li><p>Numerical Vs Categorical</p></li>
+<li><p>Numerical:Continuous VS Discrete</p></li>
+<li><p>Continuous: Interval VS Scale</p></li>
+<li><p>Categorical: ordinal vs nonminal</p></li>
+<li><p>Include definitions, examples</p></li>
+<li><p>Load the data from Chapter 1</p></li>
+</ul>
+</section>
+<section id="mean-median-mode" class="level3" data-number="3.0.2">
+<h3 data-number="3.0.2" class="anchored" data-anchor-id="mean-median-mode"><span class="header-section-number">3.0.2</span> 2.2 Mean, Median, Mode</h3>
+</section>
+<section id="spread-range-iqr-sd" class="level3" data-number="3.0.3">
+<h3 data-number="3.0.3" class="anchored" data-anchor-id="spread-range-iqr-sd"><span class="header-section-number">3.0.3</span> 2.3 Spread: range, IQR, Sd</h3>
+</section>
+<section id="visualizing-univariate" class="level3" data-number="3.0.4">
+<h3 data-number="3.0.4" class="anchored" data-anchor-id="visualizing-univariate"><span class="header-section-number">3.0.4</span> 2.4 Visualizing univariate</h3>
+<ul>
+<li><p>2.4.1 Bar chart</p></li>
+<li><p>2.4.2 Hist &amp; Density</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
