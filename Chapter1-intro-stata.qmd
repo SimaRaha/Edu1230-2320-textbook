@@ -12,6 +12,53 @@ This chapter introduces you to Stata, how to install it and the different ways t
 
 1.3 Using the command prompt
 
+``` Stata
+-------------------------------------------------------------------------
+/* Practice using basic Stata commands. 
+Learn how to obtain and summarize univariate descriptive statistics, as well as graph distributions of variables.
+
+PRACTICE USING BASIC STATA COMMANDS
+This do-file demonstrates browsing data, obtaining
+descriptive statistics, and graphing distributions.*/
+----------------------------------------------------------------------
+
+/* 1. Load your dataset (example: dataset already opened)
+  If you need to load a dataset, you could use: use "yourdata.dta", clear.*/
+
+* 2. Browse the dataset: 'browse' opens the data editor in view-only mode browse
+
+* 3. Summarize the variable mathscore (mean, SD, min, max) summarize mathscore
+
+* 4. Detailed summary statistics (percentiles, variance, etc.) summarize mathscore, detail
+
+* 5. Stem-and-leaf plot of mathscore stem mathscore
+
+* 6. Boxplot of mathscore
+* 'name()' assigns a name to the graph so it can be referred to later
+* 'replace' lets Stata overwrite a previous graph with the same name
+graph box mathscore, name(mathscorebox, replace)
+
+* 7. Histogram of mathscore with frequencies
+histogram mathscore, frequency name(mathscore, replace)
+
+* ---------------------------------------------------------
+* END OF DO-FILE
+* ---------------------------------------------------------
+
+--------------------------------------------------------------------------
+* 1. browse
+
+* 2. summarize mathscore
+
+* 3. summarize mathscore, detail
+
+* 4. stem mathscore
+
+* 5. graph box mathscore, name(mathscorebox, replace)
+
+* 6. histogram mathscore, frequency name (mathscore, replace)
+```
+
 1.3.1 Make students use it as a calculator
 
 1.4 Loading data
