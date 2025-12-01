@@ -59,9 +59,36 @@ graph save mathscore "dotmathscore.gph", replace
 * Export histogram as .png
 graph export "mathscore_hist.png", as(tif) width(2000) replace
 
-* ---------------------------------------------------------
+
 * End of Part 1
 * ---------------------------------------------------------
+
+/* 2) Use the output from these commands to describe the distribution of mathscore in more detail.
+How could you summarize what you see? Below, practice summarizing the univariate descriptive
+statistics in no more than three sentences. (Remember to describe the following: unit of analysis,
+central tendency, spread of the distribution, scale, skewness/symmetry, and atypical data points-
+e.g., outliers).*/
+
+/* 3) Now adapt this code for the ppe variable to produce univariate descriptive statistics and a
+histogram. Below, practice summarizing the univariate descriptive statistics in no more than three
+sentences.*/
+
+* UNIVARIATE DESCRIPTIVE STATISTICS FOR PPE
+* ---------------------------------------------------------
+
+summarize ppe
+summarize ppe, detail
+stem ppe
+graph box ppe, name(ppebox, replace)
+histogram ppe, frequency name(ppehist, replace)
+
+* Save graphs
+graph save ppebox "doppebox.gph", replace
+graph export "ppe_hist.png", as(tif) width(2000) replace
+
+```
+
+``` stata
 ```
 
 1.3.1 Make students use it as a calculator
