@@ -185,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#stata-window-components" id="toc-stata-window-components" class="nav-link active" data-scroll-target="#stata-window-components"><span class="header-section-number">1.1</span> 1.1 Stata window components</a></li>
+  <li><a href="#stata-window-components" id="toc-stata-window-components" class="nav-link active" data-scroll-target="#stata-window-components"><span class="header-section-number">1.1</span> Stata window components</a></li>
   </ul>
 </nav>
     </div>
@@ -213,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>This chapter introduces you to Stata, how to install it and the different ways to use it for statistical analysis. Stata is a powerful tool, but it remains a tool. The statistical concepts you learn are more important, and you will likely have to change the tools you use throughout your career. As a Brown University affiliate, you can download and install the software following instructions on this page. There are many versions of Stata, and you should install the latest version available. The code included in this book will work for version 17 and those more recent. Stata / IC should be sufficient for most of the</p>
 <section id="stata-window-components" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="stata-window-components"><span class="header-section-number">1.1</span> 1.1 Stata window components</h2>
+<h2 data-number="1.1" class="anchored" data-anchor-id="stata-window-components"><span class="header-section-number">1.1</span> Stata window components</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="www.statawindow.com"><img src="images/stata-window.png" class="img-fluid figure-img" width="3250"></a></p>
@@ -222,50 +222,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>1.2 Stata syntax and Naming conventions</p>
 <p>1.3 Using the command prompt</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>-------------------------------------------------------------------------</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">/* Practice using basic Stata commands. </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">Learn how to obtain and summarize univariate descriptive statistics, as well as graph distributions of variables.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">PRACTICE USING BASIC STATA COMMANDS</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">This do-file demonstrates browsing data, obtaining</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">descriptive statistics, and graphing distributions.*/</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>----------------------------------------------------------------------</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">/* 1. Load your dataset (example: dataset already opened)</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  If you need to load a dataset, you could use: use "yourdata.dta", clear.*/</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>* 2. Browse the dataset: 'browse' opens the <span class="kw">data</span> editor <span class="kw">in</span> view-only <span class="kw">mode</span> browse</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>* 3. Summarize the <span class="kw">variable</span> mathscore (<span class="kw">mean</span>, <span class="kw">SD</span>, <span class="fu">min</span>, <span class="fu">max</span>) <span class="kw">summarize</span> mathscore</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>* 4. Detailed summary <span class="kw">statistics</span> (percentiles, <span class="kw">variance</span>, etc.) <span class="kw">summarize</span> mathscore, <span class="kw">detail</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>* 5. Stem-and-leaf plot <span class="kw">of</span> mathscore <span class="kw">stem</span> mathscore</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>* 6. Boxplot <span class="kw">of</span> mathscore</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>* 'name()' assigns a <span class="bn">name</span> to the <span class="kw">graph</span> so it can <span class="kw">be</span> referred to later</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>* 'replace' lets Stata overwrite a previous <span class="kw">graph</span> with the same <span class="bn">name</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box mathscore, <span class="bn">name</span>(mathscorebox, <span class="kw">replace</span>)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>* 7. Histogram <span class="kw">of</span> mathscore with frequencies</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">histogram</span> mathscore, <span class="kw">frequency</span> <span class="bn">name</span>(mathscore, <span class="kw">replace</span>)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>* END OF DO-FILE</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>--------------------------------------------------------------------------</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>* 1. browse</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>* 2. <span class="kw">summarize</span> mathscore</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>* 3. <span class="kw">summarize</span> mathscore, <span class="kw">detail</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>* 4. <span class="kw">stem</span> mathscore</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>* 5. <span class="kw">graph</span> box mathscore, <span class="bn">name</span>(mathscorebox, <span class="kw">replace</span>)</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>* 6. <span class="kw">histogram</span> mathscore, <span class="kw">frequency</span> <span class="bn">name</span> (mathscore, <span class="kw">replace</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>* CLASS EXERCISE – UNIT 1</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>* Dataset: mcas_final_updated.dta</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>* Main task: practice basic Stata commands, descriptive</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>* <span class="kw">statistics</span>, and graphing distributions.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>* Load the dataset (<span class="kw">adjust</span> folder path <span class="kw">if</span> needed)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"mcas_final_updated.dta"</span>, <span class="kw">clear</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>* 1. BASIC COMMANDS FOR VARIABLE: mathscore</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>* Browse dataset (opens Data Browser)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>browse</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>* Summary <span class="kw">statistics</span>: <span class="kw">mean</span>, <span class="fu">sd</span>, <span class="fu">min</span>, <span class="fu">max</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> mathscore</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>* Detailed summary: percentiles, <span class="kw">variance</span>, skewness, kurtosis, etc.</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> mathscore, <span class="kw">detail</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>* Stem-and-leaf plot</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="kw">stem</span> mathscore</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>* Boxplot</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box mathscore, <span class="bn">name</span>(mathscorebox, <span class="kw">replace</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>* Histogram with frequencies</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="kw">histogram</span> mathscore, <span class="kw">frequency</span> <span class="bn">name</span>(mathscore, <span class="kw">replace</span>)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>* Saving graphs</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>* Save <span class="kw">graph</span> <span class="kw">in</span> Stata's .gph <span class="kw">format</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">save</span> mathscore <span class="st">"dotmathscore.gph"</span>, <span class="kw">replace</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>* Export <span class="kw">histogram</span> <span class="kw">as</span> .png</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"mathscore_hist.png"</span>, <span class="kw">as</span>(tif) <span class="kw">width</span>(2000) <span class="kw">replace</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>* End <span class="kw">of</span> Part 1</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>* ---------------------------------------------------------</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>1.3.1 Make students use it as a calculator</p>
 <p>1.4 Loading data</p>
 <p>1.4.1 Introduce an educational dataset – maybe OECD, NCES, open dataset Working Directory</p>
@@ -276,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>1.6.1 Give some links to pages</p>
 <hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 7</code></pre>
 </div>
