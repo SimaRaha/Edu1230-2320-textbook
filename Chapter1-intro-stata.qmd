@@ -95,6 +95,20 @@ graph export "ppe_hist.png", as(tif) width(2000) replace
 
 1.4 Loading data
 
+##### Download the dataset
+
+You can download the dataset used in this chapter here:
+
+[**Download MCAS Data (.dta)**](data/mcas_final_updated.dta)
+
+```` stata
+
+```stata
+use "mcas_final_updated.dta", clear
+describe
+```
+````
+
 1.4.1 Introduce an educational dataset – maybe OECD, NCES, open dataset Working Directory
 
 1.4.2 Stata code count, describe, labels, etc.
