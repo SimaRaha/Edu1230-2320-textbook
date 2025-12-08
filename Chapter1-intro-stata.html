@@ -185,7 +185,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#stata-window-components" id="toc-stata-window-components" class="nav-link active" data-scroll-target="#stata-window-components"><span class="header-section-number">1.1</span> Stata window components</a></li>
+  <li><a href="#stata-window-components" id="toc-stata-window-components" class="nav-link active" data-scroll-target="#stata-window-components"><span class="header-section-number">1.1</span> Stata window components</a>
+  <ul class="collapse">
+  <li><a href="#download-the-dataset" id="toc-download-the-dataset" class="nav-link" data-scroll-target="#download-the-dataset"><span class="header-section-number">1.1.1</span> Download the dataset</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -294,6 +297,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>1.3.1 Make students use it as a calculator</p>
 <p>1.4 Loading data</p>
+<section id="download-the-dataset" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="download-the-dataset"><span class="header-section-number">1.1.1</span> Download the dataset</h3>
+<p>You can download the dataset used in this chapter here:</p>
+<p><a href="data/mcas_final_updated.dta"><strong>Download MCAS Data (.dta)</strong></a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>```stata</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"mcas_final_updated.dta"</span>, <span class="kw">clear</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">describe</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>```</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>1.4.1 Introduce an educational dataset – maybe OECD, NCES, open dataset Working Directory</p>
 <p>1.4.2 Stata code count, describe, labels, etc.</p>
 <p>1.5 Installing Packages</p>
@@ -302,13 +314,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>1.6.1 Give some links to pages</p>
 <hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 7</code></pre>
 </div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
